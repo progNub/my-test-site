@@ -1,0 +1,326 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: rgb(252, 234, 212);
+}
+
+/* Меню панель */
+
+.nav {
+    max-height: 6rem;
+    box-shadow: 0 0 5px 2px rgb(78, 78, 78);
+    top: 0;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    background-color: darkkhaki;
+}
+
+.nav_container {
+    max-height: 5rem;
+    top: 0;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+}
+
+.nav_list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.nav_image{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.nav img {
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+
+.nav_list li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.nav_list a {
+    text-decoration: none;
+    font-size: large;
+}
+.nav_list a:hover{
+    color: white;
+}
+
+/* Меню панель поиск */
+
+.seach_box {
+    max-height: 5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: 20px
+}
+
+.seach_box button,
+.seach_box input {
+
+    background-color: darkkhaki;
+    box-shadow: 0 0 5px 2px rgb(216, 201, 255);
+}
+
+.seach_box input {
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+}
+.seach_box button{
+    background-color: rgb(255, 255, 255);
+    padding: 5px 20px 5px 20px;
+}
+
+/* Главное  */
+
+.main {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    min-height: 60vh;
+    max-height: 100%;
+    margin: 0 20px 5px 20px;
+    box-shadow: 0 0 5px 2px rgb(119, 119, 119);
+}
+
+.main_h1 {
+    padding-top: 4rem;
+    text-align: center;
+}
+.main_img{
+    padding: 20px;
+}
+.main_text{
+    padding: 20px;
+    
+}
+.main img{
+    border-radius: 5rem;
+    max-width: 40rem;
+    height: auto;
+}
+
+/* Текст */
+
+
+.main_text p {
+    font-size: x-large;
+    max-width: 40rem;
+}
+
+/* Таблица */
+.section_week{
+    padding-top: 50px;
+}
+
+.section_week img{
+    border-radius: 5rem;
+}
+
+.section_week h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.section_week h3 {
+    margin-left: 20%;
+    text-align: left;
+    font-size: x-large;
+}
+
+.news_1_container,
+.news_2_container,
+.news_3_container {
+    padding: 1rem;
+    box-shadow: 0 0 5px 2px rgb(119, 119, 119);
+    flex-wrap: wrap;
+    margin: 20px 20px 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.news_1,
+.news_2,
+.news_3 {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+   
+}
+
+.news_1 p,
+.news_2 p,
+.news_3 p {
+    font-size: x-large;
+    width: 50rem;
+}
+
+.news_1 form,
+.news_2 form,
+.news_3 form {
+    padding-bottom: 10px;
+    align-self: flex-start;
+    flex-direction: column;
+    display: flex;
+}
+
+.news_1 form input,
+.news_2 form input,
+.news_3 form input {
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+textarea{
+    padding: 10px;
+    border-radius: 5px;
+    height: 100px;
+    width: 300px;
+}
+
+.news_1 form button,
+.news_2 form button,
+.news_3 form button {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    align-self: flex-end;
+}
+.sel_polit_container{
+    padding-top: 4rem;
+}
+.polit_container {
+    justify-content: space-between;
+    margin: 1rem;
+    box-shadow: 0 0 5px 2px rgb(119, 119, 119);
+    min-height: 20vh;
+    max-height: 100%;
+    display: flex;
+    padding: 0.5rem;
+}
+
+.sel_polit_container h1 {
+    text-align: center;
+}
+
+
+
+.sel_polit_container li {
+    font-style: oblique;
+    list-style-type: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.sel_polit_container a {
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.sec_sport_container {
+    display: flex;
+    flex-direction: column;
+    min-height:  40vh;
+    max-height: 100%;
+    padding: 1rem;
+    margin: 20px;
+    box-shadow: 0 0 5px 2px rgb(119, 119, 119);
+}
+
+.sec_sport_container h1 {
+    font-size: 2rem;
+}
+
+.sec_sport_container h1,
+p {
+    text-align: center;
+}
+.sec_sport_container p{
+    font-size: 1.5rem;
+}
+
+
+
+.sec_sport_container table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+
+
+}
+
+.sec_sport_container th,
+td:first-child {
+  
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+}
+
+.sec_sport_container th,
+td {
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: rgb(0, 0, 0);
+}
+
+.sec_sport_container th:first-child,
+td:first-child {
+    text-align: left;
+}
+
+
+
+#footer {
+    box-shadow: 0 0 5px 2px rgb(119, 119, 119);
+    height: 70px;
+    background-color: darkkhaki;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.footer2 {
+    display: flex;
+}
+#footer a{
+    padding: 5px;
+} 
+
+.footer_denya{
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+#footer p {
+   padding: 0 10px 0 10px;
+}
+#footer form{
+    padding: 0 10px 0 10px;
+}
