@@ -1,8 +1,6 @@
-html{
+html {
     scroll-behavior: smooth;
 }
-
-
 
 
 body {
@@ -14,85 +12,33 @@ body {
 
 /* Меню панель */
 
-.nav {
-    max-height: 6rem;
-    box-shadow: 0 0 5px 2px rgb(78, 78, 78);
-    top: 0;
-    justify-content: space-between;
-    display: flex;
-    width: 100%;
-    position: fixed;
-    background-color: darkkhaki;
-}
 
-.nav_container {
-    max-height: 5rem;
-    top: 0;
-    display: flex;
-    /* flex-wrap: nowrap; */
-    align-items: center;
-}
 
-.nav_list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-}
-.nav_image{
-    display: flex;
-    flex-wrap: nowrap;
-}
-.nav img {
-    margin-top: 0.3rem;
-    margin-left: 0.3rem;
+
+.d-flex{
+    margin-bottom: 0.5rem;
 }
 
 
-.nav_list li {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
 
-.nav_list a {
-    text-decoration: none;
-    font-size: large;
-}
-.nav_list a:hover{
-    color: white;
-}
 
-/* Меню панель поиск */
 
-.seach_box {
-    max-height: 5rem;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin-right: 20px
-}
 
-.seach_box button,
-.seach_box input {
 
-    background-color: darkkhaki;
-    box-shadow: 0 0 5px 2px rgb(216, 201, 255);
-}
 
-.seach_box input {
-    background-color: rgb(255, 255, 255);
-    padding: 5px;
-}
-.seach_box button{
-    background-color: rgb(255, 255, 255);
-    padding: 5px 20px 5px 20px;
-}
+
+
+
+
+
+
 
 /* Главное  */
 
 .main {
     display: flex;
-    flex-wrap: wrap; 
     justify-content: space-between;
+    align-items: center;
     min-height: 60vh;
     max-height: 100%;
     margin: 0 20px 5px 20px;
@@ -103,14 +49,19 @@ body {
     padding-top: 4rem;
     text-align: center;
 }
-.main_img{
+
+.main_img {
     padding: 20px;
+    width: 50%;
 }
-.main_text{
-    padding: 20px;
-    
+
+.main_text {
+    padding: 1rem;
+    width: 50%;
+
 }
-.main img{
+
+.main img {
     border-radius: 5rem;
     max-width: 40rem;
     height: auto;
@@ -121,15 +72,15 @@ body {
 
 .main_text p {
     font-size: x-large;
-    max-width: 40rem;
+    text-align: justify;
 }
 
 /* Таблица */
-.section_week{
+.section_week {
     padding-top: 50px;
 }
 
-.section_week img{
+.section_week img {
     border-radius: 5rem;
 }
 
@@ -147,9 +98,8 @@ body {
 .news_1_container,
 .news_2_container,
 .news_3_container {
-    padding: 1rem;
+    padding: 2rem;
     box-shadow: 0 0 5px 2px rgb(119, 119, 119);
-    flex-wrap: wrap;
     margin: 20px 20px 5px 20px;
     display: flex;
     align-items: center;
@@ -160,22 +110,24 @@ body {
 .news_1,
 .news_2,
 .news_3 {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     text-align: justify;
-   
+
 }
 
 .news_1 p,
 .news_2 p,
 .news_3 p {
     font-size: x-large;
-    width: 50rem;
+    text-align: justify;
 }
 
 .news_1 form,
 .news_2 form,
 .news_3 form {
+
     padding-bottom: 10px;
     align-self: flex-start;
     flex-direction: column;
@@ -191,7 +143,7 @@ body {
     align-self: flex-start;
 }
 
-textarea{
+textarea {
     padding: 10px;
     border-radius: 5px;
     height: 100px;
@@ -202,18 +154,20 @@ textarea{
 .news_2 form button,
 .news_3 form button {
     padding: 10px;
+
     border-radius: 5px;
     margin-top: 10px;
     align-self: flex-end;
 }
-.sel_polit_container{
+
+.sel_polit_container {
     padding-top: 4rem;
 }
+
 .polit_container {
     justify-content: space-between;
     margin: 1rem;
     box-shadow: 0 0 5px 2px rgb(119, 119, 119);
-    min-height: 20vh;
     max-height: 100%;
     display: flex;
     padding: 0.5rem;
@@ -242,7 +196,7 @@ textarea{
 .sec_sport_container {
     display: flex;
     flex-direction: column;
-    min-height:  40vh;
+    min-height: 40vh;
     max-height: 100%;
     padding: 1rem;
     margin: 20px;
@@ -257,9 +211,11 @@ textarea{
 p {
     text-align: center;
 }
-.sec_sport_container p{
+
+.sec_sport_container p {
     font-size: 1.5rem;
 }
+
 
 
 
@@ -268,14 +224,17 @@ p {
     font-size: 14px;
     border-collapse: collapse;
     text-align: center;
-    width: 100%;
+    background-color: aliceblue;
 
 
 }
 
+
+
+
 .sec_sport_container th,
 td:first-child {
-  
+
     color: rgb(0, 0, 0);
     padding: 10px 20px;
 }
@@ -297,30 +256,155 @@ td:first-child {
 
 #footer {
     box-shadow: 0 0 5px 2px rgb(119, 119, 119);
-    height: 70px;
     background-color: darkkhaki;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
-    flex-wrap: nowrap;
 }
 
 .footer2 {
     display: flex;
 }
-#footer a{
-    padding: 5px;
-} 
 
-.footer_denya{
-    display: inline-flex;
+#footer a {
+    padding: 5px;
+}
+
+.footer_denya {
     flex-wrap: nowrap;
 }
 
 #footer p {
-   padding: 0 10px 0 10px;
-}
-#footer form{
     padding: 0 10px 0 10px;
+}
+
+#footer form {
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    .nav {
+        justify-content: space-around;
+    }
+
+    .nav_image {
+        display: none;
+    }
+
+    .seach_box {
+        display: none;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main_text {
+        width: auto;
+    }
+
+    .main_img img {
+        width: 95%;
+        height: auto;
+    }
+
+    .new img {
+        width: 200px;
+        height: auto;
+    }
+
+    .news_1_container,
+    .news_2_container,
+    .news_3_container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .section_week img {
+        margin-top: 1rem;
+        width: 23rem;
+        height: auto;
+
+    }
+
+    #week img {
+        width: 95%;
+
+    }
+
+    .section_week input,
+    textarea {
+
+        width: 80%;
+    }
+
+    .news_1 form,
+    .news_2 form,
+    .news_3 form {
+        display: block;
+        text-align: center;
+    }
+
+
+    .news_1 form button,
+    .news_2 form button,
+    .news_3 form button {
+        width: 50%;
+    }
+
+
+
+    .polit_container {
+        flex-direction: column;
+    }
+
+    #footer {
+        flex-direction: column;
+    }
+
+    .footer2 {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer2 img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #footer .footer_denya {
+        order: 1;
+
+    }
+
+    @media screen and (max-width: 465px) {
+        .sec_sport_container {
+            display: inline-block;
+            overflow-y: scroll;
+        }
+    }
+
+
+
+
 }
