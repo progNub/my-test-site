@@ -3,6 +3,83 @@ html {
 }
 
 
+
+
+
+
+.switch {
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: white;
+
+}
+
+
+input:focus + .slider {
+    box-shadow: 0 0 1px green;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    background-color: blue;
+    border-radius: 50%;
+}
+
+#thema {
+    margin-right: 10px;
+}
+
+
+
+#buttonThema:hover {
+    background-color: black;
+    color: white;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -12,33 +89,17 @@ body {
 
 /* Меню панель */
 
-
-
-
-.d-flex{
+.d-flex {
     margin-bottom: 0.5rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Главное  */
 
 .main {
-    display: flex;
+    display: inline-flex;
+    overflow-y: scroll;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     min-height: 60vh;
     max-height: 100%;
     margin: 0 20px 5px 20px;
@@ -46,22 +107,19 @@ body {
 }
 
 .main_h1 {
-    padding-top: 4rem;
+    padding-top: 6rem;
     text-align: center;
 }
 
-.main_img {
-    padding: 20px;
-    width: 50%;
-}
 
 .main_text {
     padding: 1rem;
-    width: 50%;
+
 
 }
 
 .main img {
+
     border-radius: 5rem;
     max-width: 40rem;
     height: auto;
@@ -71,7 +129,7 @@ body {
 
 
 .main_text p {
-    font-size: x-large;
+    font-size: 1.5rem;
     text-align: justify;
 }
 
@@ -98,6 +156,8 @@ body {
 .news_1_container,
 .news_2_container,
 .news_3_container {
+    display: inline-block;
+    overflow-y: scroll;
     padding: 2rem;
     box-shadow: 0 0 5px 2px rgb(119, 119, 119);
     margin: 20px 20px 5px 20px;
@@ -110,11 +170,18 @@ body {
 .news_1,
 .news_2,
 .news_3 {
+    width: 60%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     text-align: justify;
 
+}
+.news_1 img,
+.news_2 img,
+.news_3 img{
+width: 95%;
+height: auto;
 }
 
 .news_1 p,
@@ -160,11 +227,19 @@ textarea {
     align-self: flex-end;
 }
 
+.backText{
+    background-color: lightgray;
+    color: black;
+}
+
 .sel_polit_container {
+    display: inline-block;
+    overflow-y: scroll;
     padding-top: 4rem;
 }
 
 .polit_container {
+
     justify-content: space-between;
     margin: 1rem;
     box-shadow: 0 0 5px 2px rgb(119, 119, 119);
@@ -178,7 +253,6 @@ textarea {
 }
 
 
-
 .sel_polit_container li {
     font-style: oblique;
     list-style-type: none;
@@ -189,6 +263,7 @@ textarea {
 }
 
 .sel_polit_container a {
+
     font-size: 1.2rem;
     text-decoration: none;
 }
@@ -217,25 +292,17 @@ p {
 }
 
 
-
-
 .sec_sport_container table {
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     font-size: 14px;
     border-collapse: collapse;
     text-align: center;
-    background-color: aliceblue;
-
-
+    background-color: lightgray;
+    color: rgb(0 0 0);
 }
-
-
-
 
 .sec_sport_container th,
 td:first-child {
-
-    color: rgb(0, 0, 0);
     padding: 10px 20px;
 }
 
@@ -251,7 +318,6 @@ td {
 td:first-child {
     text-align: left;
 }
-
 
 
 #footer {
@@ -281,18 +347,6 @@ td:first-child {
 #footer form {
     padding: 1rem 1rem 1rem 1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 700px) {
 
@@ -371,6 +425,11 @@ td:first-child {
         width: 50%;
     }
 
+    .news_1 ,
+    .news_2,
+    .news_3  {
+        width: 100%;
+    }
 
 
     .polit_container {
@@ -403,8 +462,4 @@ td:first-child {
             overflow-y: scroll;
         }
     }
-
-
-
-
 }

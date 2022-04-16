@@ -1,350 +1,337 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>NEWS</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <meta name="autor" content="roman">
-        <meta name="description" content="Абзацс описывающий что-то">
-        <meta name="keywords" content="ключевые слова для поисковика, не более
+<head>
+    <title>NEWS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="autor" content="roman">
+    <meta name="description" content="Абзацс описывающий что-то">
+    <meta name="keywords" content="ключевые слова для поисковика, не более
             20 штук">
-        <link rel="stylesheet" href="./CSS/style.css">
-        <!-- Только CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<!-- Пакет JavaScript с Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    </head>
-    <body id="start">
-    
+    <link rel="stylesheet" href="./CSS/style.css">
 
-        <nav class=" fixed-top navbar navbar-expand-lg navbar-light navbar navbar-dark bg-primary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#start"><img src="./images/denya.png"
-                width="70" height="60"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"type="button" href="#start">Главная</a>
-                  </li>
-                  <li class="nav-item">
+    <!-- Только CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Пакет JavaScript с Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+</head>
+<body id="start">
+
+
+<nav class=" fixed-top navbar navbar-expand-lg navbar-light navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#start"><img src="./images/denya.png"
+                                                   width="70" height="60"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" type="button" href="#start">Главная</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#week">Публикации недели</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"  href="#politick">Политика</a>
-                  </li>
-                  <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#politick">Политика</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#sport">Спорт</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Найти" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Поиск</button>
-                </form>
-              </div>
-            </div>
-          </nav>
+                </li>
+            </ul>
+            <label class="switch d-flex">
+                <input id="buttonThema" type="checkbox" value="1">
+                <span class="slider round"></span>
+            </label>
 
-        <main id="main">
-            <div class="main_h1"><h1>Новость дня</h1></div>
-            <div class="main">
-                <div class="main_img">
-                    <img src="./images/day.jpg" alt="новость дня">
-                </div>
-                <div class="main_text">
+            <form class="d-flex">
+                <input id="searchText" class="form-control me-2" type="search" placeholder="Найти" aria-label="Search">
+                <button id="searchButton" class="btn btn-outline-success " type="submit">Поиск</button>
+            </form>
+        </div>
+    </div>
+</nav>
 
-                    <p>Пропал парень с фотографии (тот что слева) был вполне
-                        хороший
-                        такой писюн,Пропал парень с фотографии (тот что слева)
-                        был
-                        вполне хороший
-                        такой писюн,Пропал парень с фотографии (тот что слева)
-                        был
-                        вполне хороший
-                        такой писюн,Пропал парень с фотографии (тот что слева)
-                        был
-                        вполне хороший
-                        такой писюн,
-                        что теперь делать без него никто не знает так как писюн
-                        был
-                        красивым писуном.
-                        Пропал парень с фотографии (тот что слева) был вполне
-                        хороший
-                        такой писюн,
-                        что теперь делать без него никто не знает так как писюн
-                        был
-                        красивым писуном.Пропал парень с фотографии (тот что
-                        слева)
-                        был вполне хороший
-                        такой писюн,
-                        что теперь делать без него никто не знает так как писюн
-                        был
-                        красивым писуном.
-                    </p>
-                </div>
-            </div>
+<main id="main">
+    <div class="main_h1">
+        <h1 id = "Head1" class="text">Новость дня</h1></div>
+    <div class="main">
+        <div class="main_img">
+            <img src="./images/day.jpg" alt="новость дня">
+        </div>
+        <div class="main_text">
+            <p class="text">Пропал парень с фотографии (тот что слева) был вполне
+                хороший
+                такой писюн,Пропал парень с фотографии (тот что слева)
+                был
+                вполне хороший
+                такой писюн,Пропал парень с фотографии (тот что слева)
+                был
+                вполне хороший
+                такой писюн,Пропал парень с фотографии (тот что слева)
+                был
+                вполне хороший
+                такой писюн,
+                что теперь делать без него никто не знает так как писюн
+                был
+                красивым писуном.
+                Пропал парень с фотографии (тот что слева) был вполне
+                хороший
+                такой писюн,
+                что теперь делать без него никто не знает так как писюн
+                был
+                красивым писуном.Пропал парень с фотографии (тот что
+                слева)
+                был вполне хороший
+                такой писюн,
+                что теперь делать без него никто не знает так как писюн
+                был
+                красивым писуном.
+            </p>
+        </div>
+    </div>
 
-        </main>
+</main>
 
-        <section id="week" class="section_week">
-            <h1>Публикации недели</h1>
-            <div class="news_1_container">
-                <div class="news_img1">
-                    <img src="./images/azaren.jpg" alt="" width="600"
-                        height="500">
-                </div>
+<section id="week" class="section_week">
+    <h1 class="text">Публикации недели</h1>
+    <div class="news_1_container">
+        <div class="news_img1">
+            <img src="./images/azaren.jpg" alt="" width="600"
+                 height="500">
+        </div>
 
-                <div class="news_1">
-                    <h3>Политика среди нас</h3>
-                    <p>Григорий Юрьевич Азарёнок (белор. Рыгор Юр’евіч
-                        Азаронак; род. 18 октября 1995, Минск,
-                        Белоруссия) —
-                        белорусский телеведущий и пропагандист. Сын
-                        кинематографиста, журналиста и телеведущего Юрия
-                        Азарёнка.
+        <div class="news_1">
+            <h3 class="text">Политика среди нас</h3>
+            <p class="text">Григорий Юрьевич Азарёнок (белор. Рыгор Юр’евіч
+                Азаронак; род. 18 октября 1995, Минск,
+                Белоруссия) —
+                белорусский телеведущий и пропагандист. Сын
+                кинематографиста, журналиста и телеведущего Юрия
+                Азарёнка.
 
-                        С конца 2019 года занимается в Белоруссии
-                        политической журналистикой. Получил широкую
-                        известность в ходе протестов в
-                        Белоруссии 2020—2021 годов своей журналистской
-                        работой в поддержку действующего президента
-                        Белоруссии Александра Лукашенко[1].</p>
+                С конца 2019 года занимается в Белоруссии
+                политической журналистикой. Получил широкую
+                известность в ходе протестов в
+                Белоруссии 2020—2021 годов своей журналистской
+                работой в поддержку действующего президента
+                Белоруссии Александра Лукашенко[1].</p>
 
-                    <form action=""><input type="text"
-                            placeholder="Введите имя">
-                        <textarea name="" id="" cols="50" rows="10"
-                            placeholder="Комментарий"></textarea>
-
-                        <button type="submit">Отправить </button>
-                    </form>
-
-                </div>
-
-            </div>
-
-            <div class="news_2_container">
-                <div class="news_img2">
-                    <img src="./images/kotiki.jpg" alt="" width="600"
-                        height="500">
-                </div>
-                <div class="news_2">
-                    <h3>Котики нападают</h3>
-                    <p>Ко́шка (лат. Felis catus) — домашнее животное, одно
-                        из наиболее популярных[1] (наряду с собакой)
-                        «животных-компаньонов»[2][3][4].
-
-                        С точки зрения научной систематики, домашняя кошка —
-                        млекопитающее семейства кошачьих отряда хищных.
-                        Нередко домашнюю кошку
-                        рассматривают как подвид лесной кошки (Felis
-                        silvestris) — Felis s. catus[5], однако, с точки
-                        зрения современной биологической систематики (2017
-                        год),
-                        домашняя кошка является отдельным биологическим
-                        видом[6]..</p>
-                    <form action=""><input type="text"
-                            placeholder="Введите имя">
-                        <textarea name="" id="" cols="50" rows="10"
-                            placeholder="Комментарий"></textarea>
-
-                        <button type="submit">Отправить </button>
-                    </form>
-
-                </div>
-
-            </div>
-
-            <div class="news_3_container">
-                <div class="news_img3">
-                    <img src="./images/jail.jpg" alt="" width="600"
-                        height="500">
-                </div>
-                <div class="news_3">
-                    <h3>Пойман опасный преступник</h3>
-                    <p>На задании гибнет агент ЦРУ Билли Поуп (Райан
-                        Рейнольдс). Доктор Фрэнкс (Томми Ли Джонс) много лет
-                        проводит эксперименты
-                        на крысах по вживлению памяти путём пересадки мозга.
-                        ЦРУ обращается к нему с заданием пересадить память
-                        Билли.
-                        Доктор для этой цели выбирает Джерико Стюарта (Кевин
-                        Костнер) — психопата, особо опасного преступника,
-                        отбывающего наказание в тюрьме.
-                    </p>
-                    <form class="form" action=""><input type="text"
-                            placeholder="Введите имя">
-                        <textarea name="" id="" cols="50" rows="10"
-                            placeholder="Комментарий"></textarea>
-
-                        <button type="submit">Отправить </button>
-                    </form>
-                </div>
-
-            </div>
-        </section>
-        <section class="sel_polit_container" id="politick">
-            <h1>Политика</h1>
-            <div class="polit_container">
-                <div class="polit_li">
-                    <ul>
-                        <li><a
-                                href="https://www.belta.by/society/view/dumala-li-evropa-chto-k-takomu-pridet-ekspert-o-pustyh-polkah-v-evropejskih-magazinah-494203-2022/">
-                                Думала ли Европа, что к такому придет? Эксперт о
-                                пустых полках в европейских магазинах</a> </li>
-                        <li><a
-                                href="https://www.belta.by/president/view/lukashenko-nameren-provesti-soveschanie-s-rezidentami-pvt-494124-2022/">Лукашенко
-                                намерен провести совещание с представителями
-                                IT-сферы</a> </li>
-                        <li><a
-                                href="https://www.belta.by/president/view/lukashenko-nameren-provesti-soveschanie-s-rezidentami-pvt-494124-2022/">Лукашенко
-                                намерен провести совещание с представителями
-                                IT-сферы</a> </li>
-                        <li><a
-                                href="https://www.belta.by/president/view/lukashenko-nameren-provesti-soveschanie-s-rezidentami-pvt-494124-2022/">Лукашенко
-                                намерен провести совещание с представителями
-                                IT-сферы</a> </li>
-                        <li><a
-                                href="https://www.belta.by/society/view/minsvjazi-stanet-koordinatorom-gospolitiki-v-sfere-tsifrovizatsii-494150-2022/">Минсвязи
-                                станет координатором госполитики в сфере
-                                цифровизации </a> </li>
-                    </ul>
-                </div>
-                <div class="polit_ol">
-                    <ol>
-                        <li>
-                            <a
-                                href="https://www.belta.by/society/view/dumala-li-evropa-chto-k-takomu-pridet-ekspert-o-pustyh-polkah-v-evropejskih-magazinah-494203-2022/">
-                                Думала ли Европа, что к такому придет? Эксперт о
-                                пустых полках в европейских магазинах</a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.belta.by/society/view/dumala-li-evropa-chto-k-takomu-pridet-ekspert-o-pustyh-polkah-v-evropejskih-magazinah-494203-2022/">
-                                Думала ли Европа, что к такому придет? Эксперт о
-                                пустых полках в европейских магазинах</a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.belta.by/society/view/dumala-li-evropa-chto-k-takomu-pridet-ekspert-o-pustyh-polkah-v-evropejskih-magazinah-494203-2022/">
-                                Думала ли Европа, что к такому придет? Эксперт о
-                                пустых полках в европейских магазинах</a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.belta.by/society/view/dumala-li-evropa-chto-k-takomu-pridet-ekspert-o-pustyh-polkah-v-evropejskih-magazinah-494203-2022/">
-                                Думала ли Европа, что к такому придет? Эксперт о
-                                пустых полках в европейских магазинах</a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.belta.by/society/view/dumala-li-evropa-chto-k-takomu-pridet-ekspert-o-pustyh-polkah-v-evropejskih-magazinah-494203-2022/">
-                                Думала ли Европа, что к такому придет? Эксперт о
-                                пустых полках в европейских магазинах</a>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-
-        <section class="sec_sport_container" id="sport">
-            <h1>Спорт</h1>
-            <p>Спортивные соревнования денисов и гашишкников в дисциплине
-                даунизма</p>
-            <table class="table-wrap">
-                <thead>
-                    <tr>
-                        <th>Команда 1</th>
-                        <th>Результат</th>
-                        <th>Команда 2</th>
-                        <th>Всего игр</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Абхазики</td>
-                        <td>Выйграла 1</td>
-                        <td>Приставочники</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Абхазики</td>
-                        <td>Выйграла 1</td>
-                        <td>Приставочники</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Абхазики</td>
-                        <td>Выйграла 1</td>
-                        <td>Приставочники</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Абхазики</td>
-                        <td>Выйграла 1</td>
-                        <td>Приставочники</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Абхазики</td>
-                        <td>Выйграла 1</td>
-                        <td>Приставочники</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Приветики</td>
-                        <td>Выйграла 2</td>
-                        <td>Писюнчики</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>Гаичники</td>
-                        <td>Выйграла 1</td>
-                        <td>Приставочники</td>
-                        <td>34</td>
-                    </tr>
-                </tbody>
-
-            </table>
-        </section>
-
-        <footer class="navbar-light navbar navbar-dark bg-primary" id="footer">
-            <div class="footer2">
-                <p>Наши социальные сети</p>
-                <div class="sotial">
-                    <a href="https://www.youtube.com"> <img
-                            src=".\images\youtube.png" width="40" height="40"
-                            alt="ссылка на www.youtube.com"></a>
-                    <a href="https://www.vk.com"> <img src=".\images\vk.png"
-                            width="40" height="40" alt="ссылка на www.vk.com"></a>
-                </div>
-            </div>
-            <div class="footer_denya">
-                <a href="#start"><img src="./images/denya.png"
-                        width="70" height="60"></a>
-                <a href="#start"><img src="./images/denya.png"
-                        width="70" height="60"></a>
-                <a href="#start"><img src="./images/denya.png"
-                        width="70" height="60"></a>
-
-            </div>
-
-            <form>
-                <input type="text" placeholder="Email">
-                <button type="submit">Подписаться</button>
+            <form action=""><input class = "backText" type="text" placeholder="Введите имя">
+                <textarea class = "backText" cols="50" rows="10" placeholder="Комментарий"></textarea>
+                <button class = "btn btn-outline-success"  type="submit">Отправить</button>
             </form>
 
-        </footer>
-    </body>
+        </div>
 
+    </div>
 
+    <div class="news_2_container">
+        <div class="news_img2">
+            <img src="./images/kotiki.jpg" alt="" width="600"
+                 height="500">
+        </div>
+        <div class="news_2">
+            <h3 class="text">Котики нападают</h3>
+            <p class="text">Ко́шка (лат. Felis catus) — домашнее животное, одно
+                из наиболее популярных[1] (наряду с собакой)
+                «животных-компаньонов»[2][3][4].
 
+                С точки зрения научной систематики, домашняя кошка —
+                млекопитающее семейства кошачьих отряда хищных.
+                Нередко домашнюю кошку
+                рассматривают как подвид лесной кошки (Felis
+                silvestris) — Felis s. catus[5], однако, с точки
+                зрения современной биологической систематики (2017
+                год),
+                домашняя кошка является отдельным биологическим
+                видом[6]..</p>
+            <form action=""><input class = "backText" type="text" placeholder="Введите имя">
+                <textarea class = "backText" cols="50" rows="10" placeholder="Комментарий"></textarea>
+                <button class = "btn btn-outline-success"  type="submit">Отправить</button>
+            </form>
 
+        </div>
 
+    </div>
 
+    <div class="news_3_container">
+        <div class="news_img3">
+            <img src="./images/jail.jpg" alt="" width="600"
+                 height="500">
+        </div>
+        <div class="news_3">
+            <h3 class="text">Пойман опасный преступник</h3>
+            <p class="text">На задании гибнет агент ЦРУ Билли Поуп (Райан
+                Рейнольдс). Доктор Фрэнкс (Томми Ли Джонс) много лет
+                проводит эксперименты
+                на крысах по вживлению памяти путём пересадки мозга.
+                ЦРУ обращается к нему с заданием пересадить память
+                Билли.
+                Доктор для этой цели выбирает Джерико Стюарта (Кевин
+                Костнер) — психопата, особо опасного преступника,
+                отбывающего наказание в тюрьме.
+            </p>
+            <form action=""><input class = "backText" type="text" placeholder="Введите имя">
+                <textarea class = "backText" cols="50" rows="10" placeholder="Комментарий"></textarea>
+                <button class = "btn btn-outline-success"  type="submit">Отправить</button>
+            </form>
+        </div>
 
+    </div>
+</section>
+<section class="sel_polit_container" id="politick">
+    <h1 class="text">Политика</h1>
+    <div class="polit_container">
+        <div class="polit_li">
+            <ul>
+                <li><a
+                        href="https://www.belta.by/society/view/dumala-li-evropa-chto-k-takomu-pridet-ekspert-o-pustyh-polkah-v-evropejskih-magazinah-494203-2022/">
+                    Думала ли Европа, что к такому придет? Эксперт о
+                    пустых полках в европейских магазинах</a></li>
+                <li><a
+                        href="https://www.belta.by/president/view/lukashenko-nameren-provesti-soveschanie-s-rezidentami-pvt-494124-2022/">Лукашенко
+                    намерен провести совещание с представителями
+                    IT-сферы</a></li>
+                <li><a
+                        href="https://www.belta.by/president/view/lukashenko-nameren-provesti-soveschanie-s-rezidentami-pvt-494124-2022/">Лукашенко
+                    намерен провести совещание с представителями
+                    IT-сферы</a></li>
+                <li><a
+                        href="https://www.belta.by/president/view/lukashenko-nameren-provesti-soveschanie-s-rezidentami-pvt-494124-2022/">Лукашенко
+                    намерен провести совещание с представителями
+                    IT-сферы</a></li>
+                <li><a
+                        href="https://www.belta.by/society/view/minsvjazi-stanet-koordinatorom-gospolitiki-v-sfere-tsifrovizatsii-494150-2022/">Минсвязи
+                    станет координатором госполитики в сфере
+                    цифровизации </a></li>
+            </ul>
+        </div>
+        <div class="polit_ol">
+            <ol>
+                <li>
+                    <a
+                            href="https://www.belta.by/society/view/dumala-li-evropa-chto-k-takomu-pridet-ekspert-o-pustyh-polkah-v-evropejskih-magazinah-494203-2022/">
+                        Думала ли Европа, что к такому придет? Эксперт о
+                        пустых полках в европейских магазинах</a>
+                </li>
+                <li>
+                    <a
+                            href="https://www.belta.by/society/view/dumala-li-evropa-chto-k-takomu-pridet-ekspert-o-pustyh-polkah-v-evropejskih-magazinah-494203-2022/">
+                        Думала ли Европа, что к такому придет? Эксперт о
+                        пустых полках в европейских магазинах</a>
+                </li>
+                <li>
+                    <a
+                            href="https://www.belta.by/society/view/dumala-li-evropa-chto-k-takomu-pridet-ekspert-o-pustyh-polkah-v-evropejskih-magazinah-494203-2022/">
+                        Думала ли Европа, что к такому придет? Эксперт о
+                        пустых полках в европейских магазинах</a>
+                </li>
+                <li>
+                    <a
+                            href="https://www.belta.by/society/view/dumala-li-evropa-chto-k-takomu-pridet-ekspert-o-pustyh-polkah-v-evropejskih-magazinah-494203-2022/">
+                        Думала ли Европа, что к такому придет? Эксперт о
+                        пустых полках в европейских магазинах</a>
+                </li>
+                <li>
+                    <a
+                            href="https://www.belta.by/society/view/dumala-li-evropa-chto-k-takomu-pridet-ekspert-o-pustyh-polkah-v-evropejskih-magazinah-494203-2022/">
+                        Думала ли Европа, что к такому придет? Эксперт о
+                        пустых полках в европейских магазинах</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+</section>
 
+<section class="sec_sport_container" id="sport">
+    <h1 class="text">Спорт</h1>
+    <p class="text">Спортивные соревнования денисов и гашишкников в дисциплине
+        даунизма</p>
+    <table id="table" >
+        <thead>
+        <tr>
+            <th>Команда 1</th>
+            <th>Результат</th>
+            <th>Команда 2</th>
+            <th>Всего игр</th>
+        </tr>
+        </thead>
+        <tbody text>
+        <tr>
+            <td>Абхазики</td>
+            <td>Выйграла 1</td>
+            <td>Приставочники</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Абхазики</td>
+            <td>Выйграла 1</td>
+            <td>Приставочники</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Абхазики</td>
+            <td>Выйграла 1</td>
+            <td>Приставочники</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Абхазики</td>
+            <td>Выйграла 1</td>
+            <td>Приставочники</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Абхазики</td>
+            <td>Выйграла 1</td>
+            <td>Приставочники</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Приветики</td>
+            <td>Выйграла 2</td>
+            <td>Писюнчики</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Гаичники</td>
+            <td>Выйграла 1</td>
+            <td>Приставочники</td>
+            <td>34</td>
+        </tr>
+        </tbody>
 
+    </table>
+
+</section>
+
+<footer class="navbar-light navbar navbar-dark bg-primary" id="footer">
+    <div class="footer2">
+        <p>Наши социальные сети</p>
+        <div class="sotial">
+            <a href="https://www.youtube.com"> <img
+                    src=".\images\youtube.png" width="40" height="40"
+                    alt="ссылка на www.youtube.com"></a>
+            <a href="https://www.vk.com"> <img src=".\images\vk.png"
+                                               width="40" height="40" alt="ссылка на www.vk.com"></a>
+        </div>
+    </div>
+    <div class="footer_denya">
+        <a href="#start"><img src="./images/denya.png"
+                              width="70" height="60"></a>
+        <a href="#start"><img src="./images/denya.png"
+                              width="70" height="60"></a>
+        <a href="#start"><img src="./images/denya.png"
+                              width="70" height="60"></a>
+    </div>
+</footer>
+<script src="./JS/app.js"></script>
+</body>
 
 </html>
